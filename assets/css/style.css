@@ -1,0 +1,59 @@
+:root {
+    --primaryColor: #6C63FF;
+    --paragraphColor: #929292;
+    --footerBackgroundColor: #35373C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #26272b;
+    height: 100vh;
+}
+
+.content {
+    width: 90%;
+    height: 90%;
+    margin: 150px;
+
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.wrapp {
+    margin: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapp .text  {
+    width: 40%;
+    height: auto;
+}
+
+.wrapp .text h1 {
+    color: var(--primaryColor);
+    font-size: 3em;
+    margin-bottom: 1.5vh;
+}
+
+.wrapp .text p {
+    color: var(--paragraphColor);
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+.wrapp .image {
+    width: 40%;
+}
+
+.wrapp .image img {
+    width: 100%;
+    height: auto;
+}
