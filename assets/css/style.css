@@ -13,16 +13,15 @@
 body {
     background-color: #26272b;
     height: 100vh;
+
 }
 
 .content {
     width: 90%;
-    height: 90%;
-    margin: 150px;
+    margin: auto;
 
     display: flex; 
     flex-direction: column;
-
 }
 
 .wrapp {
@@ -32,20 +31,21 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .wrapp .text  {
     width: 40%;
     height: auto;
 }
 
-.wrapp .text h1 {
+.wrapp  h1 {
     color: var(--primaryColor);
     font-size: 3em;
     margin-bottom: 1.5vh;
 }
 
-.wrapp .text p {
+.wrapp  p {
     color: var(--paragraphColor);
-    font-size: 1.5em;
+    font-size: 24px;
     line-height: 1.6;
 }
 
@@ -56,4 +56,49 @@ body {
 .wrapp .image img {
     width: 100%;
     height: auto;
+}
+
+/* FORMULÁRIO */
+
+.wrapp form {
+    width: 40%;
+}
+
+.wrapp form fieldset {
+    margin-top: 1em;
+    width: 100%;
+
+    /* background-color: pink; */
+
+    border: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapp .field {
+    margin-bottom: 10px solid red;
+}
+
+
+.wrapp .field-group {
+    display: flex;
+    background-color: powderblue;
+}
+
+.wrapp .field-group .field {
+    justify-content: space-between;
+}
+
+
+form select,
+form input {
+    width: 100%;
+
+    margin-bottom: 16px;
+    padding: 16px;
+
+}
+
+
 }

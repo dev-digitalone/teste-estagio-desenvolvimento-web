@@ -31,11 +31,45 @@
         </div>  
 
         <div class="wrapp">
+            
             <form action="">
+                <h1>Lorem Ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                <fieldset>
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Nome Completo" required="required">
+                    </div>
+
+                    <div class="field">
+                        <input type="email" name="email" placeholder="Endereço de Email" id="email">
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <select name="uf" required="required" pla>
+                                <option value="">Estado</option>
+                            </select>
+
+                            <input type="hidden" name="state">
+                        </div>
+
+                        <div class="field">
+                            <select name="city" disabled="disabled" required="required">
+                                <option value="">Cidade</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <button>Enviar</button>
             </form>
+
             <figure class="image">
                 <img src="/assets/img/illustration3.svg" alt="Imagem 3">
             </figure>
+
         </div>
 
         <footer>
