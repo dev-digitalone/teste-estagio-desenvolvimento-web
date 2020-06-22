@@ -13,11 +13,9 @@
 body {
     background-color: #26272b;
     height: 100vh;
-
 }
 
 .content {
-    width: 90%;
     margin: auto;
 
     display: flex; 
@@ -112,4 +110,26 @@ form button {
    font-weight: bold;
 
    border: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--footerBackgroundColor);
+    color: white;
+    display: flex;    
+}
+
+footer ul {
+    width: 100%;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 150px;
+}
+
+footer ul li {
+    list-style: none;
+
+    margin-top: 15px;
 }
