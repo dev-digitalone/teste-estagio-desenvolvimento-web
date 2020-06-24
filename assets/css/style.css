@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #26272b;
+}
+.cp {
+  font-weight: 600;
+  color: #6c63ff;
+}
+.form-group input, .form-row input {
+  background: none;
+}
+.bg-cp {
+  background-color: #6c63ff;
+  color: #fff;
+  font-weight: 600;
+}
+.bg-foot {
+  background-color: #36373c;
+  color: #fdfdfd;
+}
+#alert {
+  opacity: 0;
+  display: none;
+}
+#alert.active {
+  animation: show .9s ease-out forwards;
+  display: block;
+}
+
+@keyframes show{
+  form {
+    opacity: 0;
+    transform: translate3d(-30px, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: ease-out .5s;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner-two .row {
+    flex-direction: column-reverse;
+  }
+  footer {
+    text-align: center;
+  }
+}
