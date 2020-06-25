@@ -1,0 +1,169 @@
+:root {
+    --backgroundColor: #26272b;
+    --primaryColor: #6C63FF;
+    --paragraphColor: #929292;
+    --footerBackgroundColor: #35373C;
+    --footerColor: #fdfdfd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Conteudo da Página */
+.content {
+    margin: auto;
+}
+
+/*Imagens e textos */
+.main-wrapp {
+    padding: 80px;
+}
+
+.wrapp {
+    margin-bottom: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapp .text  {
+    width: 40%;
+    height: auto;
+}
+
+.wrapp  h1 {
+    color: var(--primaryColor);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.wrapp  p {
+    color: var(--paragraphColor);
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.wrapp .image {
+    width: 40%;
+}
+
+.wrapp .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* FORMULÁRIO */
+.wrapp form {
+    width: 40%;
+}
+
+.wrapp form fieldset {
+    margin-top: 1rem;
+    width: 100%;
+    border: hidden;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapp .field-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapp .field-group .field {
+    width: 45%;
+}
+
+
+form select,
+form input {
+    width: 100%;
+    background-color: transparent;
+
+    margin-bottom: 16px;
+    padding: 16px;
+
+   border: 1px solid var(--paragraphColor);
+   border-radius: 5px;
+
+   color: var(--paragraphColor);
+}
+
+
+form button {
+   height: 50px;
+   width: 100%;
+
+   color: white;
+   background-color: var(--primaryColor);
+
+   font-size: 15px;
+   font-weight: bold;
+
+   border: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--footerBackgroundColor);
+    padding: 50px 0;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    margin-bottom: 80px;
+    margin-right: 80px;
+    margin-left: 80px;
+
+    color: var(--footerColor);
+    list-style: none;
+}
+
+footer ul li {
+    margin-top: 15px;
+}
+
+footer ul li a {
+    color: var(--footerColor);
+    font-style: normal;
+}
+
+/* As listas do footer eu poderia ter feito com Grid, mas não consegui usa-lo muito bem, preciso melhorar nesse quesito.*/
+
+
+/* Responsividade */
+@media (max-width: 650px) {
+    
+    .wrapp .image {
+        display: none;
+    }
+
+    .wrapp .text {
+        width: 100%;
+    }
+
+    .wrapp form {
+        width: 100%;
+    } 
+}
+
+/* Como as imagens ficavam muito pequenos em resoluções menores, preferi ocultalas.*/
